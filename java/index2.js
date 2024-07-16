@@ -20,3 +20,4 @@ $(".fixed-anchor-left").on("mouseenter", () => {
 $(".fixed-anchor-left").on("mouseleave", () => {
     $(".fixed-anchor-left").removeClass("square-box"); 
 });
+
