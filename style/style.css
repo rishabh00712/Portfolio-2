@@ -139,6 +139,7 @@ transparent;
 }
 #btns{
     display: flex;
+    flex-wrap: w;
 }
 .two{
     background-color: #50B498;
@@ -152,3 +153,54 @@ transparent;
     margin-top: 20px;
 }
 
+
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: relative;
+  right: 0px;
+  margin-left: 95;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: darkgreen;
+  transition: all 0.3s ease;
+}
+
+.menu-icon.active .bar:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.menu-content {
+  display: none;
+  flex-direction: column;
+}
+
+.menu-content button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.menu-content.active {
+  display: flex;
+}
+#icon{
+  margin-left: 95%;
+}
