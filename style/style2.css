@@ -1,0 +1,131 @@
+#about{
+    background-color: green;
+    color: white;
+}
+#home{
+    background-color: white;
+    color: black;
+}
+.body{
+    height: 100%;
+}
+html, body{
+    height: 100%;
+}
+.heading{
+    background-color: #50B498;
+    margin: 0px;
+    padding: 15px;
+    color:white;
+    padding-left: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding-left: 65px;
+    
+}
+.body{
+    background-color: white;
+    color: gray;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+.about{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+span.name{
+    font-family:serif;
+}
+.skills{
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#footer{
+    padding-top: 30px;
+}
+.box {
+    width: 100%;
+    position: relative;
+}
+
+#college, #school {
+    
+    width: 42%;
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 10px rgba(38, 12, 104, 0.75), 0 12px 40px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    position: relative;
+    vertical-align: top; /* Aligns both divs at the top */
+    margin-top:5% ;
+    color: #50B498;
+}
+
+#college {
+    float:left;
+   margin-left: 2.5%;
+}
+
+#school {
+    float: right;
+    margin-right: 150px;
+    
+
+}
+
+/* Clear floats */
+.box::after {
+   
+    display: table;
+    clear: both;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    #college, #school {
+        width: 80%;
+        float: none;
+        margin: 10px 0;
+        text-align: center; /* Center content */
+    }
+
+    #college,#school {
+        margin-top: 10%;
+        margin-left: 4%;
+    }
+}
+#college-name{
+    font-weight: bold;
+}
+.contain{
+    text-align: left;
+    padding: 30px;
+    padding-left: 40px;
+    font-size: larger;
+}
+.headings{
+    color: gray;
+}
+.head{
+    color: black;
+    font-weight:600;
+}
+img{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#languages,#libraries,#Frameworks,#others{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 10px rgba(38, 12, 104, 0.75), 0 12px 40px rgba(0, 0, 0, 0.2);
+    width: 90%;
+}
