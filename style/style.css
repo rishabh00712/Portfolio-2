@@ -205,3 +205,39 @@ transparent;
 #icon{
   margin-left: 95%;
 }
+
+a.fixed-anchor {
+  position: fixed;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+   /* For visibility */
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  border: 2px solid gray;
+  opacity: 0.4;
+}
+a.fixed-anchor-left {
+  position: fixed;
+  top: 50%;
+  
+  transform: translate(-50%, -50%);
+   /* For visibility */
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  border: 2px solid gray;
+  opacity: 0.4;
+}
+.square-box {
+  background-color: gray;
+  border: 1px solid #ccc;
+  box-shadow: 0 12px 30px rgba(38, 12, 104, 0.75), 0 12px 40px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  color: black;
+  padding-right: 20px;
+  opacity: 1; /* Ensure opacity is set to 1 by default */
+}
