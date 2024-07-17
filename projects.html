@@ -15,16 +15,22 @@
         background-color: white;
         color: black;
 }
-#home,#skills{
-    background-color: white;
-    color: black;
+.fixed-anchor-left{
+    position: relative;
+    left: 40px;
+    z-index: 2;
 }
-    #resume{
-        background-color: green;
-    color: white;
+ 
+    #project{
+        border: 1px solid #ccc;
+  box-shadow: 0 12px 30px rgba(38, 12, 104, 0.75), 0 12px 40px rgba(0, 0, 0, 0.2);
+  background-color: green;
+  color: white;
     }
 </style>
 <body>
+    <a href="./about.html" class="fixed-anchor-left" >🢀</a>
+    <a href="./education.html" class="fixed-anchor">🢂</a>
     <div class="container" >
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <button class="nav-button active" id="home"  onclick="event.preventDefault(); location.href='/index.html'">
@@ -44,7 +50,7 @@
                <samp> About</samp>
               </button>
 
-              <button class="nav-button" id="resume" onclick="event.preventDefault(); location.href='/resume.html.html'" >
+              <button class="nav-button" id="project" onclick="event.preventDefault(); location.href='/resume.html.html'" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cast" viewBox="0 0 16 16" style="vertical-align: middle;">
                     <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0"/>
                     <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086z"/>
@@ -66,7 +72,7 @@
                 </svg>
                 <samp class="buttons">Skills</samp>
               </button>
-              <button class="nav-button" id="resume" onclick="event.preventDefault(); location.href='/resume.html.html'" >
+              <button class="nav-button" id="resume" onclick="event.preventDefault(); location.href='/resume.html'" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16" style="vertical-align: middle;">
                     <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z"/>
                     <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
@@ -76,45 +82,119 @@
              
         </header>
     </div>
-    <p class="heading">PROJECTS</p>
     
+    <p class="heading">PROJECTS</p>
+   
+   
     <div class="container body">
         <div id="boxs">
-            <div class="project">
+            <div class="project" style="background-image:url(./pictures/blog.jpeg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Blog Web-Application </p><span class="dot">⫶</span>
+                    <p class="pragraph"> A simple and extensible blog web app based on a private API.</p>
+                </div>
                 <div class="cover">
-    
+                    
+                    <ul>
+                        <li><span>Tools:</span> Ejs,CSS,Node.js,Express.js,<br />Bootstrap.</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This private API base project includes options to add, edit, and delete blog posts.</li>
+                        <li>No database is included. The setup involves two servers: one for handling requests and another for processing and responding accordingly.</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="./pictures/arrow-up-right-square-fill.svg" class="gitpp" alt="right-arrow" id="arrow">
+                        <img src="./pictures/gitpppp.png" class="gitpp" alt="github" id="git">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="gray" class="bi bi-x-lg" viewBox="0 0 16 16" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
                 </div>
             </div>
     
-            <div class="project">
+            <div class="project" style="background-image:url(./pictures/map.jpeg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> World Travel Tracker </p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        A web app that can track the countries visited by different users around the world.</p>
+                </div>
                 <div class="cover">
-    
+                    
+                    <ul>
+                        <li><span>Tools:</span> Ejs,CSS,Node.js,Express.js,<br />PostgreSQL.</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This project is based on a PostgreSQL database and is capable of adding new countries as visited, as well as editing and deleting countries for each user.</li>
+                        <li>It stores the previous data into a pgAdmin database</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="./pictures/arrow-up-right-square-fill.svg" class="gitpp" alt="right-arrow" id="arrow">
+                        <img src="./pictures/gitpppp.png" class="gitpp" alt="github" id="git">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="gray" class="bi bi-x-lg" viewBox="0 0 16 16" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project"  style="background-image:url(./pictures/keeper.jpeg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Keeper Web-Application</p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        Keeper is a React-based clone of the Google Keep app, designed for storing notes.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> React,HTML,CSS,JavaScript</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This application is based on a full React front-end framework .</li>
+                        <li>No database is included.</li>
+                        <li>The Keeper app leverages React to create<br /> a responsive and efficient platform for managing daily notes and tasks<br /> seamlessly.</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="./pictures/arrow-up-right-square-fill.svg" class="gitpp" alt="right-arrow" id="arrow">
+                        <img src="./pictures/gitpppp.png" class="gitpp" alt="github" id="git">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="gray" class="bi bi-x-lg" viewBox="0 0 16 16" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
                 </div>
             </div>
     
-            <div class="project">
+            <div class="project"  style="background-image:url(./pictures/mobile\ 2.jpeg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Attendance Tracker Android App </p><span class="dot">⫶</span>
+                    <p class="pragraph"> A simple and extensible blog web app based on a private API.</p>
+                </div>
                 <div class="cover">
-    
+                    
+                    <ul>
+                        <li><span>Tools:</span> EJS, CSS, Node.js, Express.js, Bootstrap.</li>
+                        <li>Implementing registration and login functionalities for both faculty and administrators.</li>
+                        <li></li>
+                        <li>Ensuring real-time tracking and transparency for organizational efficiency.</li>
+                        <li>I am the front-end developer in our group for this project.</li>   
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="./pictures/arrow-up-right-square-fill.svg" class="gitpp" alt="right-arrow" id="arrow">
+                        <img src="./pictures/gitpppp.png" class="gitpp" alt="github" id="git">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="gray" class="bi bi-x-lg" viewBox="0 0 16 16" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
                 </div>
             </div>
     
-            <div class="project">
-                <div class="cover">
-    
-                </div>
-            </div>
-    
-            <div class="project">
-                <div class="cover">
-    
-                </div>
-            </div>
-    
-            <div class="project">
-                <div class="cover">
-    
-                </div>
-            </div>
+          
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

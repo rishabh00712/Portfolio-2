@@ -14,20 +14,27 @@
     #about{
         background-color: white;
         color: black;
-}
+    }
+    .fixed-anchor-left{
+        position: relative;
+        left: 50px;
+        z-index: 2;
+    }
 #home{
     background-color: white;
     color: black;
 }
     #skills{
-        background-color: green;
-    color: white;
+        border: 1px solid #ccc;
+  box-shadow: 0 12px 30px rgba(38, 12, 104, 0.75), 0 12px 40px rgba(0, 0, 0, 0.2);
+  background-color: green;
+  color: white;
     }
-    .fixed-anchor-left{
-        left: 40px;
-    }
+   
 </style>
+
 <body>
+    <a href="./education.html" class="fixed-anchor-left">🢀</a>
     <div class="container" >
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <button class="nav-button active" id="home"  onclick="event.preventDefault(); location.href='/index.html'">
@@ -46,6 +53,14 @@
                 </svg>
                <samp> About</samp>
               </button>
+    
+              <button class="nav-button" id="project" onclick="event.preventDefault(); location.href='/Projects.html'" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cast" viewBox="0 0 16 16" style="vertical-align: middle;">
+                    <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0"/>
+                    <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086z"/>
+                  </svg>
+                <samp class="buttons">Projects</samp>
+              </button>
               
               <button class="nav-button" id="new"  onclick="event.preventDefault(); location.href='/education.html'">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-backpack4-fill" viewBox="0 0 16 16"style="vertical-align: middle;">
@@ -54,15 +69,15 @@
                 </svg>
                 <samp class="buttons">Education</samp>
               </button>
-
+    
               <button class="nav-button" id="skills" onclick="event.preventDefault(); location.href='/skills.html'" >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16"style="vertical-align: middle;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16"style="vertical-align: middle;">
                 <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
                 </svg>
                 <samp class="buttons">Skills</samp>
               </button>
               <button class="nav-button" id="resume" onclick="event.preventDefault(); location.href='/resume.html'" >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16" style="vertical-align: middle;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16" style="vertical-align: middle;">
                     <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z"/>
                     <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
                 </svg>
@@ -72,7 +87,7 @@
         </header>
     </div>
     <p class="heading">SKILLS</p>
-    <a href="./education.html" class="fixed-anchor-left">🢀</a>
+    
     <div class="container body">
         <a href="./resume.html" class="fixed-anchor">🢂</a>
        

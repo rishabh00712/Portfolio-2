@@ -12,3 +12,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+$(".fixed-anchor").on("mouseenter", () => {
+    $(".fixed-anchor").addClass("square-box"); 
+});
+
+
+$(".fixed-anchor").on("mouseleave", () => {
+    $(".fixed-anchor").removeClass("square-box"); 
+});
+$(".fixed-anchor-left").on("mouseenter", () => {
+    $(".fixed-anchor-left").addClass("square-box"); 
+});
+
+
+$(".fixed-anchor-left").on("mouseleave", () => {
+    $(".fixed-anchor-left").removeClass("square-box"); 
+});

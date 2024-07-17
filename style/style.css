@@ -210,6 +210,7 @@ a.fixed-anchor {
   position: fixed;
   top: 50%;
   left: 95%;
+  z-index: 2;
   transform: translate(-50%, -50%);
    /* For visibility */
   padding: 5px;
@@ -240,4 +241,7 @@ a.fixed-anchor-left {
   color: black;
   padding-right: 20px;
   opacity: 1; /* Ensure opacity is set to 1 by default */
+}
+.border-bottom{
+  padding-right: 20px;
 }
