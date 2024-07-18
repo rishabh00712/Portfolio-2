@@ -57,3 +57,16 @@ $(".fixed-anchor-left").on("mouseenter", () => {
 $(".fixed-anchor-left").on("mouseleave", () => {
     $(".fixed-anchor-left").removeClass("square-box"); 
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.b').forEach(element => {
+        element.addEventListener('mouseover', () => {
+            element.classList.add('buty');
+        });
+
+        element.addEventListener('mouseout', () => {
+            element.classList.remove('buty');
+        });
+    });
+});

@@ -1,0 +1,142 @@
+
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    transition: 0.5s;
+   left: 25px;
+    top: 0%;
+}
+.box:hover{
+    height: 400px;
+}
+.box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box .imgBx img{
+    max-width: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+    
+}
+.box:hover .imgBx img{
+    opacity: 1;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.box .contents{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.box:hover .contents{
+    opacity: 1;
+
+}
+.box .contents h1{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.box .contents h1 span{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+  
+    letter-spacing: 2px;
+}
+.body{
+    height: 100%;
+  
+}
+html, body{
+    height: 100%;
+}
+.heading{
+    background-color: #50B498;
+    margin: 0px;
+    padding: 15px;
+    color:white;
+    padding-left: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding-left: 65px;
+    
+}
+.body{
+    background-color: white;
+    color: gray;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+#contacts{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .contact{
+    display: flex;
+    position: relative;
+    left: 25px;
+    top:  100px;
+    padding: 0px;
+  }
+  .contact p{
+    position: relative;
+    bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .contact p span{
+    color: #50B498;
+    font-size: 30px;
+    
+  }
