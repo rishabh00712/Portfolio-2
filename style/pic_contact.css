@@ -9,11 +9,11 @@
     align-items: center;
     margin: 0px;
     transition: 0.5s;
-   left: 25px;
+   left: 35px;
     top: 0%;
 }
 .box:hover{
-    height: 400px;
+    height: 390px;
 }
 .box .imgBx{
     position: absolute;
@@ -127,7 +127,7 @@ html, body{
     display: flex;
     position: relative;
     left: 25px;
-    top:  100px;
+    top:  10px;
     padding: 0px;
   }
   .contact p{

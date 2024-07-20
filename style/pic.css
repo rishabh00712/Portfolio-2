@@ -32,6 +32,7 @@
     max-width: 100%;
     opacity: 1;
     transition: 0.5s;
+    max-height: 100%;
     
 }
 .box:hover .imgBx img{

@@ -48,8 +48,8 @@ html{
 }
 
 .gitpp{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
    
     
 }
@@ -61,9 +61,9 @@ html{
 #arrow{
     position: relative;
     right: 15px;
-    height: 38px;
-    width: 38px;
-    bottom: 5px;
+    height: 45px;
+    width: 45px;
+    top: 2px;
 }
 .bottom{
     background-color: rgb(236, 228, 229);
